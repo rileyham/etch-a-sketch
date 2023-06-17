@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+}
+
+.cell {
+    background-color: grey;
+    height: 30px;
+    width: 30px;
+    margin: 1px;
+}
+
+.cell-hover {
+    background-color: rgb(67, 67, 67);
+    margin: -1px;
+}
