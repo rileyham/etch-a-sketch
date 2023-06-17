@@ -23,7 +23,9 @@ for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener("mouseenter", function () {
         cells[i].classList.add("cell-hover");
     });
+    /*
     cells[i].addEventListener("mouseout", function () {
         cells[i].classList.remove("cell-hover");
     });
+    */
 }
