@@ -3,11 +3,11 @@ const container = document.getElementById("container");
 function drawCells(cellCount) {
 
     for(let i = 0; i < cellCount; i++) {
-        var newRow = document.createElement("div");
+        let newRow = document.createElement("div");
         newRow.className = "row";
 
         for(let j = 0; j < cellCount; j++) {
-            var newDiv = document.createElement("div");
+            let newDiv = document.createElement("div");
             newDiv.id = i + " " + j;
             newDiv.className = "cell"
             newRow.appendChild(newDiv);
@@ -17,3 +17,13 @@ function drawCells(cellCount) {
 }
 
 drawCells(16);
+
+let cells = document.getElementsByClassName("cell")
+for (let i = 0; i < cells.length; i++) {
+    cells[i].addEventListener("mouseenter", function () {
+        cells[i].classList.add("cell-hover");
+    });
+    cells[i].addEventListener("mouseout", function () {
+        cells[i].classList.remove("cell-hover");
+    });
+}

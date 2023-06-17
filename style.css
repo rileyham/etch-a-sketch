@@ -12,4 +12,6 @@
 .cell-hover {
     background-color: rgb(67, 67, 67);
     margin: -1px;
+    height: 34px;
+    width: 34px;
 }
